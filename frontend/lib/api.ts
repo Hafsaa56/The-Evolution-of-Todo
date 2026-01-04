@@ -1,9 +1,9 @@
 import axios from 'axios'
 
 // Create an axios instance with base configuration
-// Using Next.js API routes as a proxy to the backend
+// Using the backend API URL from environment variables
 const apiClient = axios.create({
-  baseURL: '/api',
+  baseURL: process.env.NEXT_PUBLIC_API_URL || '/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
