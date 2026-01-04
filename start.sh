@@ -3,7 +3,7 @@ set -e  # Exit on any error
 
 echo "Installing dependencies..."
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r backend/requirements.txt --force-reinstall --no-cache-dir
 
 echo "Starting application on port: $PORT"
 if [ -z "$PORT" ]; then
@@ -11,4 +11,5 @@ if [ -z "$PORT" ]; then
     export PORT=8000
 fi
 
+cd backend
 python -m uvicorn main:app --host=0.0.0.0 --port=$PORT
