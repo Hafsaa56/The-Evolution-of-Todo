@@ -1,0 +1,55 @@
+TODO APPLICATION - GETTING STARTED GUIDE
+=========================================
+
+Welcome to the Todo Application with Authentication!
+
+📁 PROJECT STRUCTURE:
+├── backend/           (FastAPI server)
+│   ├── main.py       (Main application)
+│   ├── models/       (Database models)
+│   ├── api/          (API routes)
+│   ├── utils/        (Utility functions)
+│   └── requirements.txt
+├── frontend/          (Next.js application)
+│   ├── app/          (Application pages)
+│   ├── components/   (UI components)
+│   ├── services/     (API services)
+│   └── package.json
+└── RUN_INSTRUCTIONS.md (Detailed setup guide)
+
+🚀 TO RUN THE APPLICATION:
+
+ WINDOWS USERS:
+ 1. Double-click on "run_app.bat" file
+ 2. Follow the instructions in the command prompt
+ 3. Access the app at http://localhost:3000
+
+ LINUX/MAC USERS:
+ 1. Open terminal in this folder
+ 2. Run: ./run_app.sh
+ 3. Access the app at http://localhost:3000
+
+ ALTERNATIVELY (Manual Setup):
+ 1. Open TWO terminal/command prompt windows
+ 2. In first terminal, go to 'backend' folder and run:
+    - pip install -r requirements.txt
+    - uvicorn main:app --reload
+ 3. In second terminal, go to 'frontend' folder and run:
+    - npm install
+    - npm run dev
+ 4. Access the app at http://localhost:3000
+
+📋 WHAT YOU CAN DO:
+ ✓ Register a new account
+ ✓ Login to your account
+ ✓ Create tasks
+ ✓ Edit tasks
+ ✓ Mark tasks as complete/incomplete
+ ✓ Delete tasks
+ ✓ Secure session management
+
+❓ NEED HELP?
+ Read the "RUN_INSTRUCTIONS.md" file for detailed setup instructions
+ or check the API documentation at http://localhost:8000/docs
+
+The application is fully functional with user authentication and task management!
